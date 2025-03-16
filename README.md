@@ -22,20 +22,26 @@
 
 ## Hình ảnh minh họa
 
+### Màn hình chính
+
+<img src="photo/main_screen.png" width="300" alt="Màn hình chính của ứng dụng">
+
 ### Trường hợp 1: Phương trình có 2 nghiệm phân biệt
 
-<img src="photo/main_screen.png" width="300" alt="Màn hình nhập hệ số phương trình có 2 nghiệm phân biệt">
+| Màn hình nhập | Màn hình kết quả |
+|:-------------:|:----------------:|
+| <img src="photo/nghiem_kep_1.png" width="300" alt="Màn hình nhập - 2 nghiệm phân biệt"> | <img src="photo/nghiem_kep_2.png" width="300" alt="Màn hình kết quả - 2 nghiệm phân biệt"> |
 
 ### Trường hợp 2: Phương trình có nghiệm kép
 
-|                                  Màn hình nhập                                  |                                  Màn hình kết quả                                  |
-| :-----------------------------------------------------------------------------: | :--------------------------------------------------------------------------------: |
+| Màn hình nhập | Màn hình kết quả |
+|:-------------:|:----------------:|
 | <img src="photo/nghiem_kep_1.png" width="300" alt="Màn hình nhập - nghiệm kép"> | <img src="photo/nghiem_kep_2.png" width="300" alt="Màn hình kết quả - nghiệm kép"> |
 
 ### Trường hợp 3: Phương trình vô nghiệm
 
-|                                 Màn hình nhập                                 |                                 Màn hình kết quả                                 |
-| :---------------------------------------------------------------------------: | :------------------------------------------------------------------------------: |
+| Màn hình nhập | Màn hình kết quả |
+|:-------------:|:----------------:|
 | <img src="photo/vo_nghiem_1.png" width="300" alt="Màn hình nhập - vô nghiệm"> | <img src="photo/vo_nghiem_2.png" width="300" alt="Màn hình kết quả - vô nghiệm"> |
 
 ## Cấu trúc ứng dụng
@@ -47,14 +53,15 @@
 
 ## Yêu cầu hệ thống
 
-- Android 5.0 (API level 21) trở lên
-- Dung lượng cài đặt: < 5MB
+- Android 14.0 (API level 34 - "UpsideDownCake")
+- Android Studio
 
 ## Cách cài đặt
 
-1. Tải file APK từ mục Releases
-2. Cấp quyền cài đặt ứng dụng từ nguồn không xác định (nếu cần)
-3. Mở file APK và tiến hành cài đặt
+1. Clone repository này về máy local
+2. Mở dự án bằng Android Studio
+3. Sync Gradle và build project
+4. Chạy ứng dụng trên thiết bị thật hoặc máy ảo
 
 ## Công nghệ sử dụng
 
