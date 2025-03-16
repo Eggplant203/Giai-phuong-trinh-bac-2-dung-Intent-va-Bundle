@@ -1,0 +1,124 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#FF0000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/titleText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giải phương trình bậc 2\nax^2+bx+c=0"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        app:layout_constraintTop_toBottomOf="@id/topBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"/>
+
+    <!--Nhập A -->
+    <LinearLayout
+        android:id="@+id/layoutA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/titleText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập A:"
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/etInputA"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Nhập số A"
+            android:inputType="numberDecimal|numberSigned"/>
+    </LinearLayout>
+
+    <!-- Nhập B -->
+    <LinearLayout
+        android:id="@+id/layoutB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layoutA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập B:"
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/etInputB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Nhập số B"
+            android:inputType="numberDecimal|numberSigned"/>
+    </LinearLayout>
+
+    <!-- Nhập C -->
+    <LinearLayout
+        android:id="@+id/layoutC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/layoutB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập C:"
+            android:textSize="18sp"
+            android:layout_marginEnd="10dp"/>
+
+        <EditText
+            android:id="@+id/etInputC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Nhập số C"
+            android:inputType="numberDecimal|numberSigned"/>
+    </LinearLayout>
+
+    <!-- Giải phương trình -->
+    <Button
+        android:id="@+id/btnSolve"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giải phương trình"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="50dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
